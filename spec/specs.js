@@ -26,7 +26,10 @@ describe('Scrabble', function(){
   it('Returns the sum of points for a word', function(){
     Scrabble("COW").should.equal(8)
   });
-  it('Capatalizes lower case words', function(){
-    Scrabble("cow").should.equal("COW")
+  it('Capitalizes lower case words', function(){
+    Scrabble("qkf").should.equal(19)
+  });
+  it('Returns Invalid Input if the user enters an invalid character', function(){
+    Scrabble("hello there!").should.equal('Invalid Entry')
   });
 });

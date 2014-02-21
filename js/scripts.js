@@ -18,16 +18,21 @@ var LetterValue = function(word){
 };
 
 var Scrabble = function(word){
+  word = word.toString().toUpperCase();
   var userArray = word.split(""); 
   var totalPoints = 0;
   var points = 0;
-  
+
   userArray.forEach(function(letters){
      points = LetterValue(letters);
      totalPoints += points;
   });
 
-  console.log(totalPoints);
+  if (totalPoints % 1 != 0){
+    return "Invalid Entry";
+  } else {
   return totalPoints;
+  }
+
 };
 
