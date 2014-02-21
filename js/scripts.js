@@ -33,6 +33,17 @@ var Scrabble = function(word){
   } else {
   return totalPoints;
   }
-
 };
+
+$(document).ready(function() {
+  $("form#scrabble").submit(function(event) {
+    var userWord = $('input#wordInput').val();
+    var finalPoints = Scrabble(userWord);
+
+    $(".finalResult").text("Your word is worth: " + finalPoints + " points!");
+    $("#finalResult").show();
+    this.reset();
+    event.preventDefault();
+  });
+});
 

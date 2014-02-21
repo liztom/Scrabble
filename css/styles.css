@@ -1,31 +1,24 @@
-#finalResult {
-  display: none;
-  background-color: #00FFCC;
-  border: dotted #FF00CC 3px;
-  margin: 60px;
-  padding: 50px;
+
+@font-face {
+  font-family: "Scramble";
+  src: url("../font/Scramble.ttf") format("truetype");
 }
 
-.btn {
-  margin-left: 300px;
+h1{
+  font-family: "Scramble", serif; 
+  font-size: 50px;
+  color: #FFCC99;
 }
 
-.body {
-  background-color: #FF99FF;
-
+body{
+  background-image: url("../img/bg.jpg");
+  background-size: 1000px;
+  text-align: center;
 }
 
-.form-group {
-  background-color: #CCFF00;
-  border: dotted #66CCFF 10px;
-  margin: 40px;
-  padding: 35px;
-}
-
-h1 {
-  font-family: "Lucida Console", Monaco, monospace;
-  border: dotted #FF66CC 6px;
-  margin: 25px;
+p {
+  color: #FFCC99;
+  font-size: 20px;
 }
 
 
